@@ -1,2 +1,3 @@
-from config import PORT
+import os
+PORT = int(os.getenv("PORT", 8000))
 print(PORT)
